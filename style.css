@@ -1,0 +1,284 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color and font family */
+body {
+  background-color: #f4f4f4;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Style the header and navigation */
+header {
+  background-color: hotpink;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Style the about section */
+#aboutC {
+  padding: 50px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+#aboutC a {
+   text-decoration: none;
+   color: purple;
+   font-weight: bold;
+}
+
+#aboutC h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+  text-decoration: underline;
+  text-decoration-color: purple;
+}
+
+#aboutC img {
+  max-width: 100%;
+  height: 25vh;
+  border-radius: 50%;
+  margin-top: 20px;
+  border: 5px solid #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#aboutC p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555; /* Added color */
+}
+
+/* Style the "Read More" button */
+#aboutC .read-more-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: deeppink;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+#aboutC .read-more-btn:hover {
+  background-color: pink;
+}
+
+/* Style the skills section */
+
+#skills {
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+
+#skills h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  text-decoration: underline;
+  text-decoration-color: purple;
+}
+
+#skills ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Adjust the grid layout for different screen sizes */
+@media screen and (min-width: 992px) {
+  /* 3x3 grid for larger screens */
+  #skills li {
+    flex: 0 0 calc(33.333% - 40px);
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* 2x2 grid for medium screens */
+  #skills li {
+    flex: 0 0 calc(50% - 40px);
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* 2x2 grid for smaller screens */
+  #skills ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  #skills li {
+    flex: 0 0 calc(50% - 20px);
+    margin: 10px; /* Reduce margin for smaller screens */
+    padding: 10px; /* Add padding to grid items */
+    min-width: initial; /* Reset the min-width */
+  }
+}
+
+
+
+#skills li {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-color: black;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Style the skill name */
+#skills li .skill-name {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Style the skill icon */
+#skills li .skill-icon {
+  font-size: 40px;
+  color: #333;
+}
+
+/*Projects*/
+
+#projects h1 {
+   text-align: center;
+   padding-bottom: 1rem;
+   text-decoration: underline;
+   text-decoration-color: purple;
+}
+
+#projects.carousel-item img {
+  height: 30vh; 
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+  width: 100%; /* Make sure the image fills its container */
+}
+
+
+/* Style the footer */
+footer {
+  background-color: #FF5D8F;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-md-4 {
+  flex: 0 0 calc(33.333% - 40px);
+  margin: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-decoration: underline;
+  text-decoration-color: purple;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.social-media-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-media-icons a {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-media-icons a:hover {
+  color: #ff4081;
+}
+
+/*Newsletter*/
+
+    #Newsletter {
+        text-align: center;
+        margin: auto;
+        width: 70%;
+    }
+
+    #Newsletter form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Newsletter div {
+        margin-bottom: 10px;
+    }
+
+    #Newsletter label {
+        display: block;
+    }
+
+    #Newsletter input, #Newsletter textarea {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    #Newsletter button {
+        padding: 5px 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+/* Style the copyright notice */
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #555;
+  font-size: 14px;
+}
