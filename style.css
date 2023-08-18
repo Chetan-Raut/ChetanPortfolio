@@ -205,6 +205,10 @@ footer {
   margin: 20px;
 }
 
+.col-md-4 a {
+  text-decoration: none;
+}
+
 h2 {
   font-size: 24px;
   margin-bottom: 15px;
